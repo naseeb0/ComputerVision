@@ -22,7 +22,7 @@ while True:
     good_prev = prevPts[status==1]
 
     for i, (new, prev) in enumerate(zip(good_new,good_prev)):
-        x_new, y_new = new()
+        x_new, y_new = new.ravel()
         x_prev, y_prev = prev.ravel()
         
         mask = cv2.line(mask, (x_new, y_new), (x_prev, y_prev), (0, 255,0),3)
