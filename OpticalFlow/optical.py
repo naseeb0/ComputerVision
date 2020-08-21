@@ -14,7 +14,7 @@ mask = np.zeros_like(prev_frame)
 
 while True:
     ret, frame = cap.read()
-    frame_gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+    frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # RGB*
     
     nextPts, status, err = cv2.calcOpticalFlowPyrLK(prev_gray,frame_gray, prevPts, None,**lk_params)
     
