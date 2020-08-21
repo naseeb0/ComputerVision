@@ -6,7 +6,7 @@ corner_track_params = dict(maxCorners=10, qualityLevel=0.3, minDistance=7, block
 cap = cv2.VideoCapture(0)
 
 ret, prev_frame = cap.read()
-prev_gray = cv2.cvtColor(prev_frame, cv2.COLOR_BG2GRAY)
+prev_gray = cv2.cvtColor(prev_frame, cv2.COLOR_BGR2GRAY)
 
 #
 prevPts = cv2.goodFeaturesToTrack(prev_gray, mask=None, **corner_track_params)
