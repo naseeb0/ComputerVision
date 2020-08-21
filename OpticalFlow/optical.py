@@ -29,7 +29,7 @@ while True:
         frame = cv2.circle(frame, (x_new, y_new), 8, (0,0,255),-1)
         
     img = cv2.add(frame, mask)
-    cv2.imshow('FRAMe', img)
+    cv2.imshow('OpticalFlow', img)
     
     k= cv2.waitKey(30) & 0xFF
     if k==27:
