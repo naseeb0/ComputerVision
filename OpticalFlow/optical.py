@@ -21,7 +21,7 @@ while True:
     good_new = nextPts[status==1]
     good_prev = prevPts[status==1]
 
-    for i, (new, prev) in enumerate((good_new,good_prev)):
+    for i, (new, prev) in enumerate(zip(good_new,good_prev)):
         x_new, y_new = new()
         x_prev, y_prev = prev.ravel()
         
