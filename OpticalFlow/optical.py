@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import cv2
-
+lk_params = dict(winSize=(200,200), maxLevel=2, criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT))
 corner_track_params = dict(maxCorners=10, qualityLevel=0.3, minDistance=7, blockSize=7)
 cap = cv2.VideoCapture(0)
 
