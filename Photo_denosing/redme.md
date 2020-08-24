@@ -7,3 +7,4 @@ cv2.fastNlMeansDenoisingMulti() - works with image sequence captured in short pe
 
 cv2.fastNlMeansDenoisingColoredMulti() - same as above, but for color images.
 #Libaries needed
+e
