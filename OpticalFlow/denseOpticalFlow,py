@@ -16,3 +16,14 @@ while True:
     
     bgr = cv2.cvtColor(hsv_mask, cv2.COLOR_HSV2BGR)
     cv2.imshow('frame2',bgr)
+    
+    k= cv2.waitKey(10) & 0xFF
+    if k ==27:
+        break
+    prvsImg = nextImg
+cap.release()
+cv2.destroyAllWindows()
+
+    
+    
+    
